@@ -4,6 +4,10 @@
     list-style: none;
 }
 
+.row {
+    margin: 20px auto;
+}
+
 .dd-container{
     margin: 0 auto;
     width: 200px;
@@ -43,7 +47,7 @@
 
 .active .dd-icon {
     border: solid 5px transparent !important;
-    border-bottom: solid 5px #000 !important;
+    border-bottom: 5px solid #000 !important;
     margin-top: -8px;
 }
 
