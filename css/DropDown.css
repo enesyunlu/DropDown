@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dd-container{
+    margin: 0 auto;
+    width: 200px;
+    position: relative;
+}
+
+.dd-select {
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    position: relative;
+    cursor: pointer;
+}
+
+.dd-select.active {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-width: 0;
+}
+
+.dd-selected {
+    overflow: hidden;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.dd-icon {
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -3px;
+    border: 5px solid transparent;
+    border-top: 5px solid #000;
+}
+
+.active .dd-icon {
+    border: solid 5px transparent !important;
+    border-bottom: solid 5px #000 !important;
+    margin-top: -8px;
+}
+
+.dd-options {
+    width: calc(100% - 4px);
+    border: 2px solid #ccc;
+    list-style: none;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: auto;
+}
+
+.dd-options.active {
+    display: block;
+}
+
+.dd-options li {
+    padding: 3px 5px;
+    border-bottom: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.dd-options li:last-child {
+    border-bottom-width: 0px;
+}
