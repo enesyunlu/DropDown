@@ -21,7 +21,7 @@ var DD = {
             });
             $(document).on('click','.dd-options li', function(){
                 var th = $(this);
-                var thVal = th.val();
+                var thVal = th.attr('value');
                 var thText = th.text();
                 th.parents('.dd-container').find('.dd-selected').html(thText);
                 th.parents('.dd-container').find('.dd-selected-value').val(thVal);
