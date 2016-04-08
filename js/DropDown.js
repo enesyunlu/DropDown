@@ -1,9 +1,9 @@
 $(document).ready(function(){
-    DD.init();
+    PR.init();
 });
-var DD = {
+var PR = {
     init: function() {
-        DD.DropDown.init();
+        PR.DropDown.init();
     },
     DropDown: {
         init: function(){
@@ -12,7 +12,7 @@ var DD = {
                 var dd_options  = th.siblings('.dd-options');
                 if(th.hasClass('active')){
                     th.removeClass('active');
-                    DD.DropDown.dd_optionsClose();
+                    PR.DropDown.dd_optionsClose();
                 }
                 else {
                     th.addClass('active');
@@ -25,12 +25,12 @@ var DD = {
                 var thText = th.text();
                 th.parents('.dd-container').find('.dd-selected').html(thText);
                 th.parents('.dd-container').find('.dd-selected-value').val(thVal);
-                DD.DropDown.dd_optionsClose();
-                DD.DropDown.dd_selectClose();
+                PR.DropDown.dd_optionsClose();
+                PR.DropDown.dd_selectClose();
             });
             $('.dd-select').clickoutside(function() {
-                DD.DropDown.dd_optionsClose();
-                DD.DropDown.dd_selectClose();
+                PR.DropDown.dd_optionsClose();
+                PR.DropDown.dd_selectClose();
             });
         },
         dd_selectClose: function () {
