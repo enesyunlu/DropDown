@@ -46,8 +46,8 @@
 }
 
 .active .dd-icon {
-    border: solid 5px transparent !important;
-    border-bottom: 5px solid #000 !important;
+    border: solid 5px transparent;
+    border-bottom: 5px solid #000;
     margin-top: -8px;
 }
 
